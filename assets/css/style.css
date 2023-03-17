@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#coffee-container{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    top: -50px;
+}
+
+#coffee-maker-top{
+    background-color: rgb(212, 212, 212);
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 24px;
+}
+
+#top-deco1{
+    background-color: rgb(31, 31, 31);
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    z-index: 1;
+}
+
+#top-deco2{
+   background-color: rgb(31, 31, 31);
+    width: 75px;
+    height: 75px; 
+    border-radius: 100%;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    z-index: 1;
+}
+
+#top-deco3{
+    background-color: rgb(100, 100, 100);
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left: 50px;
+    top: 115px;
+}
+
+#top-deco4{
+    background-color: rgb(100, 100, 100);
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left: 140px;
+    top: 115px;
+}
+
+#gauge-bg{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 10px solid rgb(105, 105, 105)
+}
+
+#gauge-red{
+    background-color: red;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#gauge-white{
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    top: 45px;
+    left: 285px;
+}
+
+#gauge-white2{
+    background-color: white;
+    width: 125px;
+    height: 70px;
+    border-radius: 0 0 110px 110px;
+    position: absolute;
+    top: 100px;
+    left: 290px;
+    z-index: 1;
+}
+
+#gauge-needle-base{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#gauge-needle{
+    background-color: black;
+    width: 50px;
+    height: 4px;
+    transform-origin: center right;
+    position: absolute;
+    top: 98px;
+    left: 300px;
+    border-radius: 100% 0 0 100%;
+    z-index: 2;
+}
+
+.needle-animate{
+    animation: needle 15s;
+}
+
+@keyframes needle{
+    0%{ rotate: 0deg }
+
+    25%{rotate: 170deg}
+
+    80%{rotate: 170deg}
+
+    100%{ rotate: 0deg }
+}
+
+#top-deco5{
+    background-color: rgb(54, 54, 54);
+    width: 200px;
+    height: 75px;
+    border-radius: 50px;
+    position: absolute;
+    left: 460px;
+    top: 60px;
+}
+
+#top-deco6{
+    background-color: cadetblue;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: absolute;
+    left: 480px;
+    top: 80px;
+}
+
+#top-deco6:hover{
+    cursor: pointer;
+}
+
+#top-deco7{
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: absolute;
+    left: 605px;
+    top: 80px; 
+}
+
+#top-deco8{
+    background-color: rgb(165, 165, 165);
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 535px;
+    top: 72px;
+    border-radius: 20px;
+}
+
+#top-deco9{
+    background-color: rgb(165, 165, 165);
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 555px;
+    top: 72px;
+    border-radius: 20px;
+}
+
+#top-deco10{
+    background-color: rgb(165, 165, 165);
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 575px;
+    top: 72px;
+    border-radius: 20px; 
+}
+
+#side-deco{
+    background-color: rgb(56, 56, 56);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 60px;
+    top: 155px;
+    border-radius: 0 40px 40px 0;
+    z-index: -1;
+}
+
+#coffee-maker-middle{
+   background-color: rgb(177, 179, 182);
+   width: 620px;
+   height: 400px; 
+   position: absolute;
+   top: 520px;
+   left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#middle-shadow{
+    background-color: rgb(95, 94, 94);
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    top: 300px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 40px 50px 0 0;
+}
+
+.steam{
+    background-color: rgb(155, 155, 155);
+    width: 15px;
+    height: 70px;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+#steam1{
+    left: 200px;
+    top: 260px;
+}
+
+#steam2{
+    left: 220px;
+    top: 260px;
+}
+
+#steam3{
+    left: 240px;
+    top: 260px; 
+}
+
+#steam4{
+    left: 260px;
+    top: 260px; 
+}
+
+#steam5{
+    left: 340px;
+    top: 260px; 
+}
+
+#steam6{
+    left: 360px;
+    top: 260px; 
+}
+
+#steam7{
+    left: 380px;
+    top: 260px; 
+}
+
+#steam8{
+    left: 400px;
+    top: 260px; 
+}
+
+.steam-animate{
+    animation: steam-animate 5s;
+}
+
+@keyframes steam-animate{
+    0%{top: 260px; opacity: 0%;}
+    50%{opacity: 50%;}
+    90%{opacity: 0%;}
+    100%{top: 120px; opacity: 0%;}
+}
+
+#coffee{
+    background-color: #623412;
+    width: 29px;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px inset, rgb(0, 0, 0) 0px 18px 36px -18px inset;
+}
+
+#coffee-drop1{
+    background-color: #623412;
+    width: 29px;
+    height: 39px;
+    border-radius: 100%;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.753) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.685) 0px 18px 36px -18px inset;
+}
+
+#coffee-drop2{
+    background-color: #623412;
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.753) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.685) 0px 18px 36px -18px inset;
+}
+
+.drop-animate{
+    animation: drop 3s;
+}
+
+.coffee-animate{
+    animation: pour 10s;
+}
+
+@keyframes pour{
+    0%{top: 60px;}
+    20%{top: 205px;}
+    50%{top: 205px;}
+    95%{top: 400px}
+    100%{top: 400px;}
+}
+
+@keyframes drop{
+    0%{top: 120px}
+    100%{top: 350px}
+}
+
+#prod1{
+    background-color: rgb(219, 219, 219);
+    width: 35px;
+    height: 150px;
+    position: absolute;
+    left: 100px;
+}
+
+#prod2{
+    background-color: cadetblue;
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    border-radius: 0 0 10px 10px;
+}
+
+#spout-top{
+    background-color: rgb(43, 43, 43);
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#spout-cone{
+    background-color: rgb(43, 43, 43);
+    width: 160px;
+    height: 75px;
+    border-radius: 0 0 100px 100px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#spout-nozzle{
+    background-color: rgb(43, 43, 43);
+    width: 35px;
+    height: 35px;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#cup-body{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    bottom: -85px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 5px 5px 110px 110px;
+    z-index: 3;
+}
+
+#cup-handle{
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    position: absolute;
+    left: 390px;
+    top: 280px;
+}
+
+#cup-handle-air{
+    background-color: rgb(95, 94, 94);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: absolute;
+    top: 290px;
+    left: 400px
+}
+
+#coffee-maker-bottom{
+   background-color: rgb(212, 212, 212);
+    width: 690px; 
+    height: 150px;
+    position: absolute;
+    top: 790px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 50px 50px;
+}
+
+#bottom-deco{
+    background-color: rgb(43, 43, 43);
+    width: 500px;
+    height: 60px;
+    border-radius: 100px 100px 0 0 ;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cadetblue;
+    font-size: 40px;
+}
